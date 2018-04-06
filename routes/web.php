@@ -10,7 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'GuestController@index');
+Route::get('/admin', 'AdminController@index');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Auth::routes();
+
+Route::resource('post', 'PostController');
+Route::resource('claim', 'ClaimController');
+
+Route::get('/captcha', 'CaptchaController@index');
+Route::post('/upload', 'UploadController@index');
