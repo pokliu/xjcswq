@@ -29,7 +29,7 @@
             <div class="form-group row">
                 <label for="content" class="col-md-2 form-control-label">图片：</label>
                 <div class="col-md-10">
-                    <input multiple id="uploader" type="file" name="images[]" value="{{ old('images[]') }}" />
+                    <input multiple id="uploader" type="file" name="images[]"/>
                 </div>
             </div>
             <div class="row">
