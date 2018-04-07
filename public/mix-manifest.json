@@ -3,5 +3,7 @@
     "/css/app.css": "/css/app.css",
     "/css/dist.css": "/css/dist.css",
     "/js/dist.js": "/js/dist.js",
-    "/js/jquery.min.js": "/js/jquery.min.js"
+    "/js/jquery.min.js": "/js/jquery.min.js",
+    "/js/bootstrap.min.js": "/js/bootstrap.min.js",
+    "/css/bootstrap.min.css": "/css/bootstrap.min.css"
 }

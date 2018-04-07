@@ -8,12 +8,13 @@
         <title>虚假陈述维权网</title>
 
         <!-- Styles -->
+        @yield('links')
         <link rel="stylesheet" href="{{ asset('css/dist.css') }}">
     </head>
     <body>
         <div class="header">
             <div class="title">
-                <h1>虚假陈述维权网</h1>
+                <div class="name">虚假陈述维权网</div>
                 <span class="sub">Untrue Statement Litigation</span>
             </div>
             <div class="nav">
@@ -39,4 +40,5 @@
     </body>
     <script src="/js/jquery.min.js"></script>
     <script src="{{ asset('/js/dist.js') }}"></script>
+    @yield('scripts')
 </html>

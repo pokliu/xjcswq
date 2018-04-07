@@ -35,8 +35,11 @@ body .header .title {
   padding-top: 10px;
 }
 
-body .header .title h1 {
+body .header .title .name {
   line-height: 100%;
+  font-size: 32px;
+  padding: 0.5em 0;
+  font-weight: bold;
 }
 
 body .header .title span.sub {
@@ -282,12 +285,15 @@ body .container .index_page .row .card .body ul.claims li {
   margin: 8px;
 }
 
-body .container .post {
+body .container .post,
+body .container .list,
+body .container .claim_form {
   width: 863px;
   margin: 0 auto;
   background: #ffffff;
   overflow: hidden;
   padding: 10px 60px 0 60px;
+  min-height: 600px;
 }
 
 body .container .post .title {
@@ -314,7 +320,6 @@ body .container .post .content {
   font-size: 14px;
   line-height: 28px;
   padding: 20px 0;
-  min-height: 400px;
 }
 
 body .container .post .content p {
@@ -347,14 +352,6 @@ body .container .post .claim a {
   font-size: 25px;
 }
 
-body .container .list {
-  width: 863px;
-  margin: 0 auto;
-  background: #ffffff;
-  overflow: hidden;
-  padding: 10px 60px 0 60px;
-}
-
 body .container .list .title {
   color: #5ba3a6;
   font-size: 24px;
@@ -385,5 +382,15 @@ body .container .list .main ul li a span {
 
 body .container .list .main ul li a span.time {
   float: right;
+}
+
+body .container .claim_form .title {
+  color: #5ba3a6;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+body .container .claim_form * .muted {
+  color: red;
 }
 

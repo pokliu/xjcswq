@@ -20,8 +20,8 @@ class CreateClaimsTable extends Migration
             $table->string('phone')->nullable();
             $table->string('email')->nullable();
             $table->string('location')->nullable();
-            $table->dateTime('bought_time')->nullable();
-            $table->dateTime('sold_time')->nullable();
+            $table->string('bought_time')->nullable();
+            $table->string('sold_time')->nullable();
             $table->text('description')->nullable();
             $table->timestamps();
 

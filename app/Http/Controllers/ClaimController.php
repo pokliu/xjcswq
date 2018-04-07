@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Claim;
 use Illuminate\Http\Request;
+use App\Post;
 
 class ClaimController extends Controller
 {
@@ -40,9 +41,15 @@ class ClaimController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $options = Post::where('type', 'claim')->select(['title', 'id'])->orderBy('updated_at', 'desc')->get();
+
+        return view('claim.create', [
+            'options' => $options,
+            'id' => $request->id,
+            'status' => $request->status
+        ]);
     }
 
     /**
@@ -53,28 +60,31 @@ class ClaimController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate([
+        $request->validate([
             'captcha' => 'required|captcha',
-            'post_id' => 'required|numeric|exists:posts',
+            'post_id' => 'required|numeric|exists:posts,id',
             'name' => 'string|max:255',
             'phone' => 'required|string|max:255',
             'email' => 'required|email',
             'location' => 'required|string|max:255',
-            'bought_time' => 'required|date',
-            'sold_time' => 'required|date|after:bought_time',
-            'description' => 'string'
+            'bought_time' => 'required|string',
+            'sold_time' => 'required|string',
+            'description' => 'required|string'
         ], [], [
             'captcha' => '验证码',
             'post_id' => '投诉对象',
             'name' => '姓名',
             'phone' => '电话',
             'email' => '电子邮箱',
+            'location' => '地址',
+            'bought_time' => '买入时间',
+            'sold_time' => '卖出时间',
             'description' => '描述'
         ]);
 
         $claim = Claim::create($request->all());
 
-        return $claim;
+        return redirect('/claim/create?status=success');
     }
 
     /**
@@ -108,22 +118,25 @@ class ClaimController extends Controller
      */
     public function update(Request $request, Claim $claim)
     {
-        $this->validate([
+        $request->validate([
             'captcha' => 'required|captcha',
-            'post_id' => 'required|numeric|exists:posts',
-            'name' => 'required|string|max:255',
+            'post_id' => 'required|numeric|exists:posts,id',
+            'name' => 'string|max:255',
             'phone' => 'required|string|max:255',
             'email' => 'required|email',
             'location' => 'required|string|max:255',
-            'bought_time' => 'required|date',
-            'sold_time' => 'required|date|after:bought_time',
-            'description' => 'string'
+            'bought_time' => 'required|string',
+            'sold_time' => 'required|string',
+            'description' => 'required|string'
         ], [], [
             'captcha' => '验证码',
             'post_id' => '投诉对象',
             'name' => '姓名',
             'phone' => '电话',
             'email' => '电子邮箱',
+            'location' => '地址',
+            'bought_time' => '买入时间',
+            'sold_time' => '卖出时间',
             'description' => '描述'
         ]);
 
