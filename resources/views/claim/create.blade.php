@@ -5,7 +5,7 @@
         <div class="title"><h3>索赔申报</h3></div>
         @if ($status == 'success')
             <div class="alert alert-success">
-                您已成功完成索赔申报！
+                您已成功提交索赔申报！
             </div>
         @endif
         <form action="/claim" method="POST">

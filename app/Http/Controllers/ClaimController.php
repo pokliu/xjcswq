@@ -72,14 +72,14 @@ class ClaimController extends Controller
             'description' => 'required|string'
         ], [], [
             'captcha' => '验证码',
-            'post_id' => '投诉对象',
+            'post_id' => '申报对象',
             'name' => '姓名',
             'phone' => '电话',
-            'email' => '电子邮箱',
-            'location' => '地址',
-            'bought_time' => '买入时间',
+            'email' => 'email地址',
+            'location' => '省份与地区',
+            'bought_time' => '购买时间',
             'sold_time' => '卖出时间',
-            'description' => '描述'
+            'description' => '备注'
         ]);
 
         $claim = Claim::create($request->all());
@@ -130,14 +130,14 @@ class ClaimController extends Controller
             'description' => 'required|string'
         ], [], [
             'captcha' => '验证码',
-            'post_id' => '投诉对象',
+            'post_id' => '申报对象',
             'name' => '姓名',
             'phone' => '电话',
-            'email' => '电子邮箱',
-            'location' => '地址',
-            'bought_time' => '买入时间',
+            'email' => 'email地址',
+            'location' => '省份与地区',
+            'bought_time' => '购买时间',
             'sold_time' => '卖出时间',
-            'description' => '描述'
+            'description' => '备注'
         ]);
 
         $claim->fill($request->all())->save();
