@@ -81,26 +81,26 @@ class PostController extends Controller
             'type' => '文章类型',
             'content' => '内容'
         ]);
-        $images = null;
-        if($request->hasFile('images')){
-            $images = array_map(function($image){
+        $imgs = null;
+        if($request->hasFile('imgs')){
+            $imgs = array_map(function($image){
                 if($image->isValid()){
                     return [
                         'name' => $image->getClientOriginalName(),
-                        'path' => $image->store('images', 'public')
+                        'path' => $image->store('imgs', 'public')
                     ];
                 }else{
                     return null;
                 }
-            }, $request->file('images'));
-            $images = array_filter($images, function($item){
+            }, $request->file('imgs'));
+            $imgs = array_filter($imgs, function($item){
                 return !is_null($item);
             });
         }
 
         $post = Post::create(array_merge($request->all(), [
             'admin_id' => Auth::id(),
-            'images' => json_encode($images, JSON_UNESCAPED_UNICODE)
+            'images' => json_encode($imgs, JSON_UNESCAPED_UNICODE)
         ]));
 
         return redirect('/post?type='.$request->type);
@@ -114,7 +114,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        return $post;
+        return view('post.show', ['post' => $post]);
     }
 
     /**
@@ -148,26 +148,26 @@ class PostController extends Controller
             'content' => '内容'
         ]);
 
-        $images = null;
-        if($request->hasFile('images')){
-            $images = array_map(function($image){
+        $imgs = null;
+        if($request->hasFile('imgs')){
+            $imgs = array_map(function($image){
                 if($image->isValid()){
                     return [
                         'name' => $image->getClientOriginalName(),
-                        'path' => $image->store('images', 'public')
+                        'path' => $image->store('imgs', 'public')
                     ];
                 }else{
                     return null;
                 }
-            }, $request->file('images'));
-            $images = array_filter($images, function($item){
+            }, $request->file('imgs'));
+            $imgs = array_filter($imgs, function($item){
                 return !is_null($item);
             });
         }
 
         $post->fill(array_merge($request->all(), [
             'admin_id' => Auth::id(),
-            'images' => $images
+            'images' => $imgs
         ]))->save();
 
         return redirect('/post?type='.$request->type);

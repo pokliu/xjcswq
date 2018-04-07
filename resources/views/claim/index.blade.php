@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-123
+<div class="container">
+    申报列表
+</div>
 @endsection

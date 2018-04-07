@@ -12968,7 +12968,8 @@ return jQuery;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(3);
-module.exports = __webpack_require__(7);
+__webpack_require__(7);
+module.exports = __webpack_require__(8);
 
 
 /***/ }),
@@ -16974,6 +16975,12 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 /***/ }),
 /* 7 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

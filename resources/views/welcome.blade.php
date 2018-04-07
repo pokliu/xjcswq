@@ -1,95 +1,105 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.dist')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
+@section('content')
+    <div class="index_page">
+        <div class="row">
+            <div class="left">
+                <div class="banner" id="focus">
+                    <ul>
+                        @foreach($banner as $item)
+                            <li>
+                                <a href="/post/{{ $item['id'] }}?type=information"><img src="{{ $item['src'] }}" alt="{{ $item['title'] }}" /></a>
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>                    
+            </div>
+            <div class="right static_1">
+                <div class="side">
+                    <a href="/static/claim">
+                        <h2>索赔申报</h2>
+                    </a>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div class="side">
+                    <a href="/static/right">
+                        <h2>投资者索赔资格查询</h2>
+                    </a>
                 </div>
             </div>
         </div>
-    </body>
-</html>
+        <div class="row">
+            <div class="left">
+                <div class="card">
+                    <div class="head">
+                        <span class="name">索赔征集中公司</span>
+                        <span class="more"><a href="/post/list?type=claim">>more</a></span>
+                    </div>
+                    <div class="body">
+                        <ul class="claims">
+                            @foreach($claims as $item)
+                                <li>
+                                    <a href="/post/{{$item->id}}?type=claim">{{ $item->title }}</a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right static_2">
+                <div class="side">
+                    <a href="/static/service">
+                        <h2>服务介绍</h2>
+                    </a>
+                </div>
+                <div class="side">
+                    <a href="/static/pay">
+                        <h2>费用支持政策</h2>
+                    </a>
+                </div>
+                <div class="side">
+                    <a href="/static/contact">
+                        <h2>联系我们</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="left">
+                <div class="card">
+                   <div class="head">
+                       <span class="name">最新动态</span>
+                       <span class="more"><a href="/post/list?type=information">>more</a></span>
+                   </div>
+                   <div class="body">
+                       <ul class="informations">
+                           @foreach($informations as $item)
+                               <li>
+                                   <a href="/post/{{$item->id}}?type=information">{{ $item->title }}</a>
+                               </li>
+                           @endforeach
+                       </ul>
+                   </div>
+                </div>
+            </div>
+            <div class="right">
+                <div style="margin-left: 20px">
+                    <div class="card">
+                       <div class="head">
+                           <span class="name">FAQ</span>
+                           <span class="more"><a href="/post/list?type=faq">>more</a></span>
+                       </div>
+                       <div class="body">
+                           <ul class="faqs">
+                               @foreach($faqs as $item)
+                                   <li>
+                                       <a href="/post/{{$item->id}}?type=faq">{{ $item->title }}</a>
+                                   </li>
+                               @endforeach
+                           </ul>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>      
+@endsection
