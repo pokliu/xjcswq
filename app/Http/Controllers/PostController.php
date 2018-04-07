@@ -100,7 +100,7 @@ class PostController extends Controller
 
         $post = Post::create(array_merge($request->all(), [
             'admin_id' => Auth::id(),
-            'images' => json_encode($imgs, JSON_UNESCAPED_UNICODE)
+            'images' => $imgs
         ]));
 
         return redirect('/post?type='.$request->type);

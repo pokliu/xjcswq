@@ -44,6 +44,7 @@ $(function() {
 
     //本例为左右滚动，即所有li元素都是在同一排向左浮动，所以这里需要计算出外围ul元素的宽度
     $("#focus ul").css("width",sWidth * (len));
+    $("#focus ul li a img").css("width", sWidth);
     
     //鼠标滑上焦点图时停止自动播放，滑出时开始自动播放
     $("#focus").hover(function() {

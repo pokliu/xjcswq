@@ -17,7 +17,7 @@ body div.bg {
   width: 100vw;
   top: 0;
   z-index: -9999;
-  background-image: url(/images/background.jpg?b8ec23eb8a5314acbee641d3650a7ef7);
+  background-image: url(/images/background.jpg?1bfa303af861376a6d8cc5e03c3380d2);
   background-size: 100vw 100vh;
 }
 
@@ -128,13 +128,14 @@ body .container .index_page .row .right {
 
 body .container .index_page .row .banner {
   width: 100%;
-  height: 240px;
+  height: 220px;
+  margin-top: 20px;
   overflow: hidden;
   position: relative;
 }
 
 body .container .index_page .row .banner ul {
-  height: 240px;
+  height: 220px;
   position: absolute;
   padding: 0px;
   margin: 0px;
@@ -142,10 +143,10 @@ body .container .index_page .row .banner ul {
 
 body .container .index_page .row .banner ul li {
   float: left;
-  width: 100%;
-  height: 240px;
+  height: 220px;
   overflow: hidden;
   position: relative;
+  background-color: black;
 }
 
 body .container .index_page .row .banner ul li div {
@@ -285,6 +286,13 @@ body .container .index_page .row .card .body ul.claims li {
   margin: 8px;
 }
 
+body .container .index_page .row .card .body ul.informations li span.time {
+  color: lightslategray;
+  float: right;
+  font-size: 10px;
+  margin-right: 8px;
+}
+
 body .container .post,
 body .container .list,
 body .container .claim_form {
@@ -328,6 +336,7 @@ body .container .post .content p {
 
 body .container .post .content p.img {
   text-align: center;
+  text-indent: 0;
 }
 
 body .container .post .content p.img img {
