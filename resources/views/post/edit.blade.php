@@ -31,7 +31,7 @@
                 <label for="content" class="col-md-2 form-control-label">图片：</label>
                 <div class="col-md-10">
                     <input multiple id="uploader" type="file" name="imgs[]"/>
-                    @if (!is_null($post->images) && count($post->images) > 0)
+                    @if (!is_null($post->images) && gettype($post->images) === 'array' && count($post->images) > 0)
                         <p style="color:sandybrown">当前编辑的{{ $post->type_name }}已上传了{{ count($post->images) }}张图片，若重新选择图片将删除已上传的图片</p>
                     @endif
                 </div>

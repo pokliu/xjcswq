@@ -19,9 +19,9 @@
             <div class="nav">
                 <ul>
                     <li><a class="name" href="/">首页</a></li>
-                    <li><a class="name" href="/post/list?type=information">动态</a></li>
-                    <li><a class="name" href="/post/list?type=case">案例分析</a></li>
-                    <li><a class="name" href="/post/list?type=claim">索赔名单</a></li>
+                    <li><a class="name" href="/list?type=information">动态</a></li>
+                    <li><a class="name" href="/list?type=case">案例分析</a></li>
+                    <li><a class="name" href="/list?type=claim">索赔名单</a></li>
                     <li><a class="name" href="/static/contact">联系我们</a></li>
                 </ul>
             </div>

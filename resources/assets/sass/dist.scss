@@ -8,7 +8,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: "Microsoft YaHei";
+    font-family: Arial, Helvetica, sans-serif;
     
     div.bg{
         position: fixed;
@@ -203,11 +203,11 @@ body {
                         ul li{
                             padding-top: 4px;
                         }
-                        ul a{
+                        * a{
                             color: #254B96;
                             font-size: 16px;
                             font-family: Arial, Helvetica, sans-serif;
-                            text-shadow: lightgray 0 0.5px 0;
+                            text-shadow: #254B96 0 0.2px 0;
                         }
                         ul.claims li{
                             float: left;
@@ -252,8 +252,68 @@ body {
                 padding: 20px 0;
                 min-height: 400px;
 
-                img{
-                    max-width: 100%;
+                p{
+                    text-indent: 40px;
+                }
+
+                p.img{
+                    text-align: center;
+                    img{
+                        max-width: 100%;
+                    }
+                }                
+
+                pre{
+                    text-indent: 40px;
+                    white-space: pre-wrap;
+                }
+            }
+
+            .claim{
+                text-align: center;
+                margin: 10px;
+                a{
+                    padding: 10px;
+                    background-color: green;
+                    display: inline-block;
+                    color: white;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .list{
+            width: 863px;
+            margin: 0 auto;
+            background: #ffffff;
+            overflow: hidden;
+            padding: 10px 60px 0 60px;
+
+            .title{
+                color: #5ba3a6;
+                font-size: 24px;
+                margin: 20px 0
+            }
+
+            .main ul {
+                padding-left: 0;
+                li{
+                    font-size: 14px;
+                    padding: 5px 0;
+                    list-style: none;
+                    a{
+                        display: block;
+                        line-height: 40px;
+                        background: #E8E6E6;
+                        color: #040404;
+                        cursor: pointer;
+                        span{
+                            margin: 0 8px;
+                            &.time{
+                                float: right;
+                            }
+                        }
+                    }
                 }
             }
         }

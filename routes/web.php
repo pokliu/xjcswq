@@ -11,12 +11,18 @@
 |
 */
 Route::get('/', 'GuestController@index');
+
+Route::view('/static/service', 'static.service');
+Route::view('/static/right', 'static.right');
+Route::view('/static/pay', 'static.pay');
+Route::view('/static/contact', 'static.contact');
+
 Route::get('/admin', 'AdminController@index');
 
 Auth::routes();
 
 Route::resource('post', 'PostController');
+Route::get('/list', 'PostController@list');
 Route::resource('claim', 'ClaimController');
 
 Route::get('/captcha', 'CaptchaController@index');
-Route::post('/upload', 'UploadController@index');

@@ -183,4 +183,21 @@ class PostController extends Controller
     {
         $post->delete();
     }
+
+
+    public function list(Request $request){
+        $request->validate([
+            'type' => 'required|string|in:claim,information,faq,case'
+        ], [], [
+            'type' => '类型'
+        ]);
+
+        $data = Post::where('type', $request->type)->orderBy('updated_at', 'desc')->select(['title', 'id', 'updated_at', 'type'])->get();
+        $type_name = $this->kv[$request->type];
+
+        return view('post.list', [
+            'data' => $data,
+            'type_name' => $type_name
+        ]);
+    }
 }

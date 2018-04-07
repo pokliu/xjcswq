@@ -16,7 +16,7 @@
             </div>
             <div class="right static_1">
                 <div class="side">
-                    <a href="/static/claim">
+                    <a href="/list?type=claim">
                         <h2>索赔申报</h2>
                     </a>
                 </div>
@@ -32,7 +32,7 @@
                 <div class="card">
                     <div class="head">
                         <span class="name">索赔征集中公司</span>
-                        <span class="more"><a href="/post/list?type=claim">>more</a></span>
+                        <span class="more"><a href="/list?type=claim">>more</a></span>
                     </div>
                     <div class="body">
                         <ul class="claims">
@@ -68,7 +68,7 @@
                 <div class="card">
                    <div class="head">
                        <span class="name">最新动态</span>
-                       <span class="more"><a href="/post/list?type=information">>more</a></span>
+                       <span class="more"><a href="/list?type=information">>more</a></span>
                    </div>
                    <div class="body">
                        <ul class="informations">
@@ -86,7 +86,7 @@
                     <div class="card">
                        <div class="head">
                            <span class="name">FAQ</span>
-                           <span class="more"><a href="/post/list?type=faq">>more</a></span>
+                           <span class="more"><a href="/list?type=faq">>more</a></span>
                        </div>
                        <div class="body">
                            <ul class="faqs">

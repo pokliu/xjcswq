@@ -8,7 +8,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: "Microsoft YaHei";
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body div.bg {
@@ -269,11 +269,11 @@ body .container .index_page .row .card .body ul li {
   padding-top: 4px;
 }
 
-body .container .index_page .row .card .body ul a {
+body .container .index_page .row .card .body * a {
   color: #254B96;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-  text-shadow: lightgray 0 0.5px 0;
+  text-shadow: #254B96 0 0.2px 0;
 }
 
 body .container .index_page .row .card .body ul.claims li {
@@ -317,7 +317,73 @@ body .container .post .content {
   min-height: 400px;
 }
 
-body .container .post .content img {
+body .container .post .content p {
+  text-indent: 40px;
+}
+
+body .container .post .content p.img {
+  text-align: center;
+}
+
+body .container .post .content p.img img {
   max-width: 100%;
+}
+
+body .container .post .content pre {
+  text-indent: 40px;
+  white-space: pre-wrap;
+}
+
+body .container .post .claim {
+  text-align: center;
+  margin: 10px;
+}
+
+body .container .post .claim a {
+  padding: 10px;
+  background-color: green;
+  display: inline-block;
+  color: white;
+  font-size: 25px;
+}
+
+body .container .list {
+  width: 863px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+  padding: 10px 60px 0 60px;
+}
+
+body .container .list .title {
+  color: #5ba3a6;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+body .container .list .main ul {
+  padding-left: 0;
+}
+
+body .container .list .main ul li {
+  font-size: 14px;
+  padding: 5px 0;
+  list-style: none;
+}
+
+body .container .list .main ul li a {
+  display: block;
+  line-height: 40px;
+  background: #E8E6E6;
+  color: #040404;
+  cursor: pointer;
+}
+
+body .container .list .main ul li a span {
+  margin: 0 8px;
+}
+
+body .container .list .main ul li a span.time {
+  float: right;
 }
 
