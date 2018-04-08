@@ -22,7 +22,7 @@ class GuestController extends Controller
             return !is_null($item);
         });
 
-        $claims = Post::where('type', 'claim')->select(['id', 'title'])->orderBy('updated_at', 'desc')->take(10)->get();
+        $claims = Post::where('type', 'claim')->select(['id', 'title'])->orderBy('updated_at', 'desc')->take(20)->get();
         $informations = Post::where('type', 'information')->select(['id', 'title', 'updated_at'])->orderBy('updated_at', 'desc')->take(6)->get();
         $faqs = Post::where('type', 'faq')->select(['id', 'title'])->orderBy('updated_at', 'desc')->take(6)->get();
 
