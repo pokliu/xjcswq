@@ -24,16 +24,8 @@ class ClaimController extends Controller
      */
     public function index(Request $request)
     {
-        return view('claim/index');
-        $request->validate([
-            'page' => 'numeric',
-            'perPage' => 'numeric'
-        ], [], [
-            'page' => '页码',
-            'perPage' => '每页数目'
-        ]);
-
-        return Claim::orderBy('updated_at', 'desc')->paginate($request->perPage? $request->perPage: 10);
+        $claims = Claim::with(['post'])->orderBy('updated_at')->get();
+        return view('claim/index', ['claims' => $claims]);
     }
 
     /**
@@ -95,7 +87,7 @@ class ClaimController extends Controller
      */
     public function show(Claim $claim)
     {
-        return $claim;
+        return view('claim.show', ['claim' => $claim]);
     }
 
     /**
@@ -155,6 +147,6 @@ class ClaimController extends Controller
     {
         $claim->delete();
 
-        return [];
+        return redirect('/claim');
     }
 }

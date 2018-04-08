@@ -17,12 +17,12 @@
             <div class="right static_1">
                 <div class="side">
                     <a href="/list?type=claim">
-                        <h2>索赔申报</h2>
+                        <h2><i class="iconfont icon-claim"></i><span>索赔申报</span></h2>
                     </a>
                 </div>
                 <div class="side">
                     <a href="/static/right">
-                        <h2>投资者索赔资格查询</h2>
+                        <h2><i class="iconfont icon-right"></i><span>投资者索赔资格查询</span></h2>
                     </a>
                 </div>
             </div>
@@ -48,17 +48,17 @@
             <div class="right static_2">
                 <div class="side">
                     <a href="/static/service">
-                        <h2>服务介绍</h2>
+                        <h2><i class="iconfont icon-service"></i><span>服务介绍</span></h2>
                     </a>
                 </div>
                 <div class="side">
                     <a href="/static/pay">
-                        <h2>费用支持政策</h2>
+                        <h2><i class="iconfont icon-pay"></i><span>费用支持政策</span></h2>
                     </a>
                 </div>
                 <div class="side">
                     <a href="/static/contact">
-                        <h2>联系我们</h2>
+                        <h2><i class="iconfont icon-contact"></i><span>联系我们</span></h2>
                     </a>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                 <div style="margin-left: 20px">
                     <div class="card">
                        <div class="head">
-                           <span class="name">FAQ</span>
+                           <span class="name">常见问题FAQ</span>
                            <span class="more"><a href="/list?type=faq">>more</a></span>
                        </div>
                        <div class="body">

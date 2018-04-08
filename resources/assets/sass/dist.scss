@@ -1,3 +1,5 @@
+@import '../iconfont/iconfont.css';
+
 a{
     text-decoration: none;
 }
@@ -29,7 +31,8 @@ body {
             height: 100%;
             min-width: 240px;
             text-align: right;
-            color: white;
+            color:rgb(63, 63, 63);
+            text-shadow: white 1px 1px 3px;
             padding-top: 10px;
 
             .name{
@@ -50,7 +53,7 @@ body {
             width: 60vw;
             min-width: 550px;
             height: 100%;
-            color: white;
+            color:rgb(63, 63, 63);
 
             ul{
                 list-style: none;
@@ -65,7 +68,9 @@ body {
 
                     a{
                         display: inline-block;
-                        color: white;
+                        color:rgb(63, 63, 63);
+                        text-shadow: white 1px 1px 3px;
+                        font-weight: bold;
                         height: 100%;
                         width: 100%;
                         text-align: center;
@@ -155,9 +160,13 @@ body {
                     .side{
                         float:left;
                         a{
-                            display: block; margin-left: 20px; height: 220px; background-color: rgba(255,255,255,0.6);color:black;cursor:pointer;text-align:center;
+                            display: block; margin-left: 20px; height: 220px; background-color: rgba(255,255,255,0.6);color:rgb(63, 63, 63);cursor:pointer;text-align:center;
                             h2{
-                                padding-top: 90px;
+                                padding-top: 50px;
+                                i{
+                                    display: block;
+                                    font-size: 3em;
+                                }
                             }
                         }
                     }
