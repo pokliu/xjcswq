@@ -32,7 +32,7 @@
                 <div class="card">
                    <div class="head">
                        <span class="name">最新动态</span>
-                       <span class="more"><a href="/list?type=information">>more</a></span>
+                       <span class="more"><a href="/list?type=information">>More</a></span>
                    </div>
                    <div class="body">
                        <ul class="informations">
@@ -69,7 +69,7 @@
                 <div class="card">
                    <div class="head">
                        <span class="name">常见问题FAQ</span>
-                       <span class="more"><a href="/list?type=faq">>more</a></span>
+                       <span class="more"><a href="/list?type=faq">>More</a></span>
                    </div>
                    <div class="body">
                        <ul class="faqs">
@@ -87,7 +87,7 @@
                     <div class="card">
                         <div class="head">
                             <span class="name">索赔征集中公司</span>
-                            <span class="more"><a href="/list?type=claim">>more</a></span>
+                            <span class="more"><a href="/list?type=claim">>More</a></span>
                         </div>
                         <div class="body">
                             <ul class="claims">

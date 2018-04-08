@@ -159,7 +159,7 @@ body {
                     .side{
                         float:left;
                         a{
-                            display: block; margin-left: 20px; height: 220px; background-color: rgba(255,255,255,0.6);color:rgb(63, 63, 63);cursor:pointer;text-align:center;
+                            display: block; margin-left: 20px; height: 220px; background-color: rgba(255,255,255,0.5);color:rgb(63, 63, 63);cursor:pointer;text-align:center;
                             h2{
                                 padding-top: 50px;
                                 i{
@@ -185,7 +185,7 @@ body {
                 .card{
                     width: 100%;
                     height: 220px;
-                    background-color: rgba(255,255,255,0.6);
+                    background-color: rgba(255,255,255,0.5);
                     margin-top: 20px;
 
                     .head{
@@ -215,8 +215,8 @@ body {
                             padding-top: 4px;
                         }
                         * a{
-                            color: #254B96;
-                            font-size: 16px;
+                            color: #2c86d3;
+                            font-size: 14px;
                             text-shadow: #254B96 0 0.2px 0;
                         }
                         ul.claims li{
@@ -224,7 +224,6 @@ body {
                             display: block;
                             padding: 0 4px;
                             margin: 4px 0;
-                            font-size: 8px;
                             border-right: 1px solid gray;
                         }
                         ul.informations li{
