@@ -116,8 +116,7 @@ body {
                     float: left;
                 }
                 .left{
-                    width: 40%;
-                    min-width: 400px;
+                    width: 30%;
                 }
                 .right{
                     width: 60%;
@@ -224,7 +223,8 @@ body {
                         ul.claims li{
                             float: left;
                             display: block;
-                            margin: 8px;
+                            margin: 4px;
+                            font-size: 8px;
                         }
                         ul.informations li{
                             span.time{
