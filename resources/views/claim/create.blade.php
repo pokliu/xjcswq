@@ -115,7 +115,7 @@
                 <label for="captcha" class="col-md-2 form-control-label"></label>
                 <div class="col-md-10">
                     <input type="checkbox" onclick="document.getElementById('submit_btn').disabled = !event.srcElement.checked" required>
-                    <span class="muted">*</span>我已阅读并同意《<a href="/static/agreement" target="_blank">用户信息保密协议</a>》
+                    <span class="muted">*(必选项)</span>我已阅读并同意《<a href="/static/agreement" target="_blank">用户信息保密协议</a>》
                 </div>
             </div>
             <div style="text-align: center">
