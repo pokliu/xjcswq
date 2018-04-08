@@ -16,6 +16,7 @@ Route::view('/static/service', 'static.service');
 Route::view('/static/right', 'static.right');
 Route::view('/static/pay', 'static.pay');
 Route::view('/static/contact', 'static.contact');
+Route::view('/static/agreement', 'static.agreement');
 
 Route::get('/admin', 'AdminController@index');
 
