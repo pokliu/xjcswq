@@ -15,7 +15,7 @@
         <div class="header">
             <div class="title">
                 <div class="name">虚假陈述维权网</div>
-                <span class="sub">Untrue Statement Litigation</span>
+                <span class="sub">Misrepresentation Litigation</span>
             </div>
             <div class="nav">
                 <ul>
