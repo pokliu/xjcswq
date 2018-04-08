@@ -20,7 +20,9 @@ Route::view('/static/agreement', 'static.agreement');
 
 Route::get('/admin', 'AdminController@index');
 
-Auth::routes();
+if(env('APP_DEBUG', false) == true){
+    Auth::routes();
+}
 
 Route::resource('post', 'PostController');
 Route::get('/list', 'PostController@list');
