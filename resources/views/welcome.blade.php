@@ -75,7 +75,7 @@
                            @foreach($informations as $item)
                                <li>
                                    <a href="/post/{{$item->id}}?type=information">{{ $item->title }}</a>
-                                   <span class="time">{{ $item->updated_at }}</span>
+                                   <span class="time">{{ $item->updated_at->format('m-d') }}</span>
                                </li>
                            @endforeach
                        </ul>
