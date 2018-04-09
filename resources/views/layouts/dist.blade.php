@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="虚假陈述,披露,赔偿,上市公司,信息披露违法,索赔,诉讼,维权,起诉,股东,股民,虚假记载,重大遗漏,不当披露,误导性陈述,证监会,处罚,投资差额损失,代理,律师,法院" >
 
         <title>虚假陈述维权网</title>
 
@@ -14,8 +15,10 @@
     <body>
         <div class="header">
             <div class="title">
-                <div class="name">虚假陈述维权网</div>
-                <span class="sub">Misrepresentation Litigation</span>
+                <div class="box">
+                    <div class="name">虚假陈述维权网</div>
+                    <span class="sub">Misrepresentation Litigation</span>
+                </div>
             </div>
             <div class="nav">
                 <ul>

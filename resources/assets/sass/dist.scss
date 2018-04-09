@@ -27,24 +27,27 @@ body {
 
         .title{
             float: left;
-            width: 30vw;
+            width: 32vw;
             height: 100%;
             min-width: 240px;
             text-align: right;
             color:rgb(63, 63, 63);
-            text-shadow: rgb(192, 192, 192) 1px 1px 2px;
+            text-shadow: #c0c0c0b3 1px 1px 2px;
             padding-top: 10px;
 
-            .name{
-                line-height: 100%;
-                font-size: 32px;
-                padding: 0.5em 0;
-                font-weight: bold;
-            }
-            span.sub{
-                font-weight: bold;
-                font-size: 18px;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            .box{
+                display: inline-block;
+                text-align: center;
+                .name{
+                    line-height: 100%;
+                    font-size: 36px;
+                    padding: 0.5em 0;
+                    font-weight: bold;
+                }
+                span.sub{
+                    font-weight: bold;
+                    font-size: 18px;
+                }
             }
         }
         
@@ -69,13 +72,13 @@ body {
                     a{
                         display: inline-block;
                         color:rgb(63, 63, 63);
-                        text-shadow: rgb(192, 192, 192) 1px 1px 2px;
+                        text-shadow: #c0c0c0b3 1px 1px 2px;
                         font-weight: bold;
                         height: 100%;
                         width: 100%;
                         text-align: center;
-                        line-height: 6;
-                        font-size: 18px;
+                        line-height: 5;
+                        font-size: 22px;
 
                         &:hover{
                             background-color: #ffffff2e;
@@ -243,7 +246,7 @@ body {
         .post,.list,.claim_form{
             width: 863px;
             margin: 0 auto;
-            background: #ffffffe0;
+            background: hsla(0, 0%, 100%, 0.85);
             overflow: hidden;
             padding: 10px 60px 60px 60px;
             min-height: 600px;
