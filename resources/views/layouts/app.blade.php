@@ -53,7 +53,7 @@
                         <!-- Authentication Links -->
                         @guest
                             <li><a class="nav-link" href="{{ route('login') }}">{{ __('登录') }}</a></li>
-                            <li><a class="nav-link" href="{{ route('register') }}">{{ __('注册') }}</a></li>
+                            <li><a class="nav-link" href="/register">{{ __('注册') }}</a></li>
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

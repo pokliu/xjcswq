@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="虚假陈述,披露,赔偿,上市公司,信息披露违法,索赔,诉讼,维权,起诉,股东,股民,虚假记载,重大遗漏,不当披露,误导性陈述,证监会,处罚,投资差额损失,代理,律师,法院" >
+        <meta name="description" content="虚假陈述维权网是国内首家第三方为股民投资者提供维权索赔费用支持的法律网站，实现广大股民前期超低成本乃至无成本维权索赔。" >
 
         <title>虚假陈述维权网</title>
 
