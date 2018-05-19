@@ -36,8 +36,13 @@
             </div>
         </div>
         <div class="footer">
-            <span>粤ICP备18031461号-1</span>
-            <span>©2018 虚假陈述集结号</span>
+            <span class="node">粤ICP备18031461号-1</span>
+            <span class="node">©2018 虚假陈述集结号</span>
+            <span class="node">
+                <span>友情链接:</span>
+                <a href="http://www.vtlaw.cn/cn/index.html" target="_blank">万商天勤律师事务所</a>
+                <a href="http://www.dslegalcapital.com" target="_blank">鼎颂商事争议解决支持平台</a>
+            </span>
         </div>
         <div class="bg"></div>
     </body>

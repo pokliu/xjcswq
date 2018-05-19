@@ -24,7 +24,7 @@ class ClaimController extends Controller
      */
     public function index(Request $request)
     {
-        $claims = Claim::with(['post'])->orderBy('updated_at')->get();
+        $claims = Claim::with(['post'])->orderBy('updated_at', 'desc')->get();
         return view('claim/index', ['claims' => $claims]);
     }
 

@@ -99,9 +99,13 @@ body {
         color: white;
         font-size: 14px;
 
-        span{
+        span.node{
             line-height: 40px;
             margin: 10px;
+            a{
+              color: white;
+              text-decoration: underline;
+            }
         }
     }
 
