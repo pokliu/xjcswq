@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="footer">
-            <span class="node">粤ICP备18031461号-1</span>
+            <span class="node"><a target="_blank" href="http://www.beian.miit.gov.cn">粤ICP备18031461号-1</a></span>
             <span class="node">©2018 虚假陈述集结号</span>
             <span class="node">
                 <span>友情链接:</span>
