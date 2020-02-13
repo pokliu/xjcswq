@@ -36,14 +36,17 @@
                 @yield('content')
             </div>
         </div>
-        <div class="footer">
+        <div class="footer" style="margin-bottom:40px">
             <span class="node">©2018 虚假陈述集结号</span>
-            <span class="node"><a target="_blank" href="http://www.beian.miit.gov.cn">粤ICP备18031461号-1</a></span>
-            <span class="node">
+            <span class="node"><a target="_blank" href="http://www.beian.miit.gov.cn">粤ICP备18031461号-1</span>
+            <span class="node" style="color:white">
                 <span>友情链接:</span>
-                <a href="http://www.vtlaw.cn/cn/index.html" target="_blank">万商天勤律师事务所</a>
-                <a href="http://www.dslegalcapital.com" target="_blank">鼎颂商事争议解决支持平台</a>
+                <a style="color:white" href="http://www.vtlaw.cn/cn/index.html" target="_blank">万商天勤律师事务所</a>
+                <a style="color:white" href="http://www.dslegalcapital.com" target="_blank">鼎颂商事争议解决支持平台</a>
             </span>
+        </div>
+        <div class="footer">
+            <span class="node"><a target="_blank" href="http://www.beian.miit.gov.cn">信息产业部备案管理系统</span>
         </div>
         <div class="bg"></div>
     </body>
